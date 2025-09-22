@@ -4,16 +4,5 @@ deployment:
     - export DEPLOYPATH=/home/sateales/public_html/tealblocks/wp-content/themes/tealblank
     - /bin/cp /home/sateales/repositories/tealblank-theme/style.css $DEPLOYPATH
     - /bin/cp /home/sateales/repositories/tealblank-theme/functions.php $DEPLOYPATH
-    - /bin/cp -R /home/sateales/repositories/tealblank-theme/blocks $DEPLOYPATH
-    - /bin/cp -R /home/sateales/repositories/tealblank-theme/template-parts $DEPLOYPATH
-    - /bin/cp -R /home/sateales/repositories/tealblank-theme/src $DEPLOYPATH
-    - /bin/cp /home/sateales/repositories/tealblank-theme/theme.json $DEPLOYPATH
-    - /bin/cp /home/sateales/repositories/tealblank-theme/archive.php $DEPLOYPATH
-    - /bin/cp /home/sateales/repositories/tealblank-theme/blocks.php $DEPLOYPATH
-    - /bin/cp /home/sateales/repositories/tealblank-theme/footer.php $DEPLOYPATH
-    - /bin/cp /home/sateales/repositories/tealblank-theme/header.php $DEPLOYPATH
-    - /bin/cp /home/sateales/repositories/tealblank-theme/index.php $DEPLOYPATH
-    - /bin/cp /home/sateales/repositories/tealblank-theme/page.php $DEPLOYPATH
-    - /bin/cp /home/sateales/repositories/tealblank-theme/search.php $DEPLOYPATH
-    - /bin/cp /home/sateales/repositories/tealblank-theme/single.php $DEPLOYPATH
+
     
