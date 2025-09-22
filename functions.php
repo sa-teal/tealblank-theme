@@ -39,3 +39,10 @@ function tealblank_enqueue_editor_assets() {
     wp_enqueue_style( 'tealblank-editor-style', $editor_uri, array( 'wp-edit-blocks' ), $ver );
 }
 add_action( 'enqueue_block_editor_assets', 'tealblank_enqueue_editor_assets' );
+
+
+// Personalizar tipografías
+function tealblank_enqueue_styles() {
+    wp_enqueue_style('tealblank-google-fonts', 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap', false);
+}
+add_action('wp_enqueue_scripts', 'tealblank_enqueue_styles');

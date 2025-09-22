@@ -10,8 +10,7 @@
     },
     "typography": {
       "fontFamilies": [
-        { "fontFamily": "Arial, sans-serif", "name": "Arial", "slug": "arial" },
-        { "fontFamily": "Roboto, sans-serif", "name": "Roboto", "slug": "roboto" }
+        { "fontFamily": "Work Sans, sans-serif", "name": "work-sans", "slug": "Work Sans" }
       ]
     },
     "layout": {
@@ -26,6 +25,26 @@
     },
     "typography": {
       "fontSize": "16px"
+    }
+  }
+}
+
+
+{
+  "version": 2,
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "Work Sans, sans-serif",
+          "slug": "work-sans",
+          "name": ""
+        }
+      ],
+      "customFontSize": true
+    },
+    "color": {
+      "custom": true
     }
   }
 }
