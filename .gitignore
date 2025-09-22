@@ -4,7 +4,6 @@ package-lock.json
 npm-debug.log*
 
 # Build / Tailwind output
-assets/css/*.css
 assets/css/*.map
 !assets/css/.gitkeep
 
