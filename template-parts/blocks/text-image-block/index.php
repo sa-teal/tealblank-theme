@@ -1,6 +1,5 @@
 <?php
 // Campos ACF
-$show_image = get_field('show_image');
 $image = get_field('image');
 $show_title = get_field('show_title');
 $title = get_field('title');
@@ -17,7 +16,7 @@ $title_tag = get_field('title_tag') ?: 'h2';
 
 <div class="text-image-block flex flex-col md:flex-row <?php echo $reverse_order ? 'md:flex-row-reverse' : ''; ?>">
     
-    <?php if($show_image && $image): ?>
+    <?php if($image): ?>
         <div class="image w-full md:w-1/2">
             <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
         </div>
