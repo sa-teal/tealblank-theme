@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/sateales/public_html/tealbloks/wp-content/themes/tealblank
-    - /bin/cp -r * $DEPLOYPATH
+    - /bin/cp -r /home/sateales/repositories/tealblank/* $DEPLOYPATH
