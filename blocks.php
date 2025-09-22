@@ -15,18 +15,31 @@ function tealblank_register_blocks() {
             'mode'              => 'edit',
             'supports'          => array(
                 'align' => true,
-                'mode' => true,
-                'jsx' => true
-            ),
+                'mode' => true            ),
         ));
         acf_register_block_type(array(
             'name'              => 'card-block',
-            'title'             => __('Card'),
+            'title'             => __('Bloque: Card'),
             'description'       => __('Un bloque card flexible.'),
             'render_template'   => 'template-parts/blocks/card-block/index.php',
             'category'          => 'layout',
             'icon'              => 'admin-post',
             'keywords'          => array( 'card', 'tealblank' ),
+            'mode'              => 'edit',
+            'supports'          => array(
+                'align' => true, 
+                'anchor' => true,
+                'customClassName' => true,
+            ),
+        ));
+        acf_register_block_type(array(
+            'name'              => 'hero-block',
+            'title'             => __('Bloque: Hero'),
+            'description'       => __('Un bloque hero para destacar encabezados.'),
+            'render_template'   => 'template-parts/blocks/hero-block/index.php',
+            'category'          => 'layout',
+            'icon'              => 'admin-post',
+            'keywords'          => array( 'hero', 'tealblank' ),
             'mode'              => 'edit',
             'supports'          => array(
                 'align' => true, 
