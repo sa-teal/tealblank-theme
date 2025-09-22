@@ -4,5 +4,4 @@ deployment:
     - export DEPLOYPATH=/home/sateales/public_html/tealblocks/wp-content/themes/tealblank
     - /bin/cp /home/sateales/repositories/tealblank-theme/style.css $DEPLOYPATH
     - /bin/cp /home/sateales/repositories/tealblank-theme/functions.php $DEPLOYPATH
-
     
