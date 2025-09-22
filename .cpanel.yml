@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/sateales/public_html/tealbloks/wp-content/themes/tealblank
+    - /bin/rsync -av --exclude='.git' --exclude='.cpanel.yml' ./ $DEPLOYPATH
