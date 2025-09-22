@@ -15,4 +15,12 @@ module.exports = {
     }
   },
   plugins: [],
+  safelist: [
+    'text-sm',
+    'text-base',
+    'text-lg',
+    'text-xl',
+    'text-2xl',
+    'text-3xl',
+  ],
 }
