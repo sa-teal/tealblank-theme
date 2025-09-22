@@ -1,0 +1,22 @@
+# Node
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# Build / Tailwind output
+assets/css/*.css
+assets/css/*.map
+!assets/css/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# WordPress (si aplicara)
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/

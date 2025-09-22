@@ -1,0 +1,6 @@
+/* src/css/editor.css (para estilos dentro del editor Gutenberg) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos específicos del editor (si los hay) */

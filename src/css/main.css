@@ -1,0 +1,6 @@
+/* Importar tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS personalizado */

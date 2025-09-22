@@ -1,0 +1,28 @@
+{
+  "name": "tealblank-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "build": "tailwindcss -i ./src/css/main.css -o ./assets/css/style.css --minify && tailwindcss -i ./src/css/editor.css -o ./assets/css/editor.css --minify",
+  "watch:frontend": "tailwindcss -i ./src/css/main.css -o ./assets/css/style.css --watch",
+  "watch:editor": "tailwindcss -i ./src/css/editor.css -o ./assets/css/editor.css --watch"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sa-teal/tealblank-theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sa-teal/tealblank-theme/issues"
+  },
+  "homepage": "https://github.com/sa-teal/tealblank-theme#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
+  }
+}
