@@ -42,7 +42,13 @@ add_action( 'enqueue_block_editor_assets', 'tealblank_enqueue_editor_assets' );
 
 
 // Personalizar tipografías
-function tealblank_enqueue_styles() {
-    wp_enqueue_style('tealblank-google-fonts', 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap', false);
+function tealblank_enqueue_fonts() {
+    wp_enqueue_style(
+        'work-sans-font',
+        'https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap',
+        array(),
+        null
+    );
 }
-add_action('wp_enqueue_scripts', 'tealblank_enqueue_styles');
+add_action('wp_enqueue_scripts', 'tealblank_enqueue_fonts');
+add_action('enqueue_block_assets', 'tealblank_enqueue_fonts'); // Para bloques también

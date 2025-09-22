@@ -23,6 +23,12 @@
       "background": "#ffffff",
       "text": "#111111"
     },
+    "elements": {
+      "body": {
+        "typography": {
+          "fontFamily": "Work Sans, sans-serif"
+        }
+      },
     "typography": {
       "fontSize": "16px"
     }
@@ -30,21 +36,3 @@
 }
 
 
-{
-  "version": 2,
-  "settings": {
-    "typography": {
-      "fontFamilies": [
-        {
-          "fontFamily": "Work Sans, sans-serif",
-          "slug": "work-sans",
-          "name": ""
-        }
-      ],
-      "customFontSize": true
-    },
-    "color": {
-      "custom": true
-    }
-  }
-}
