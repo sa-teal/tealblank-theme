@@ -5,5 +5,7 @@ deployment:
     - /bin/cp style.css $DEPLOYPATH
     - /bin/cp functions.php $DEPLOYPATH
     - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp -R template-parts $DEPLOYPATH
+    - /bin/cp -R src $DEPLOYPATH
 
     
