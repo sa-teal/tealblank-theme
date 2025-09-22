@@ -19,5 +19,20 @@ function tealblank_register_blocks() {
                 'jsx' => true
             ),
         ));
+        acf_register_block_type(array(
+            'name'              => 'card-block',
+            'title'             => __('Card'),
+            'description'       => __('Un bloque card flexible.'),
+            'render_template'   => 'template-parts/blocks/card-block/index.php',
+            'category'          => 'layout',
+            'icon'              => 'admin-post',
+            'keywords'          => array( 'card', 'tealblank' ),
+            'mode'              => 'edit',
+            'supports'          => array(
+                'align' => true, 
+                'anchor' => true,
+                'customClassName' => true,
+            ),
+        ));
     }
 }
