@@ -56,3 +56,14 @@ add_action('enqueue_block_assets', 'tealblank_enqueue_fonts'); // Para bloques t
 
 // Bloques ACF
 require get_template_directory() . '/blocks.php';
+
+// Añadir Tailwind al editor de Gutenberg
+function tealblank_block_editor_styles() {
+    wp_enqueue_style(
+        'tealblank-editor-style',
+        get_template_directory_uri() . '/assets/css/style.css', 
+        array(),
+        filemtime(get_template_directory() . '/assets/css/style.css')
+    );
+}
+add_action('enqueue_block_editor_assets', 'tealblank_block_editor_styles');
