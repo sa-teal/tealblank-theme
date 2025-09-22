@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class('font-sans'); ?>>
 <?php wp_body_open(); ?>
 
 <a class="skip-link sr-only focus:not-sr-only" href="#content"><?php esc_html_e( 'Saltar al contenido', 'tealblank' ); ?></a>
