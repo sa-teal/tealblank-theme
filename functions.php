@@ -52,3 +52,7 @@ function tealblank_enqueue_fonts() {
 }
 add_action('wp_enqueue_scripts', 'tealblank_enqueue_fonts');
 add_action('enqueue_block_assets', 'tealblank_enqueue_fonts'); // Para bloques también
+
+
+// Bloques ACF
+require get_template_directory() . '/blocks.php';
