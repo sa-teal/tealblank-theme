@@ -9,9 +9,9 @@ $button = get_field('button');
 
 <div class="hero-block flex flex-col md:flex-row">
 
-    <div class="text w-full md:w-3/4 flex flex-col justify-center p-4">
+    <div class="text w-full md:w-3/4 flex flex-col justify-center py-8 h-screen">
         <?php if ($title): ?>
-            <h1 class="font-bold mb-2 text-4xl md:text-7xl"><?php echo esc_html($title); ?> TEST </h1>
+            <h1 class="font-bold mb-2 text-4xl md:text-7xl"><?php echo esc_html($title); ?> </h1>
         <?php endif; ?>
 
         <?php if ($show_text && $text): ?>
