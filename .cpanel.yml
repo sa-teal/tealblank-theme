@@ -1,4 +1,19 @@
 ---
 deployment:
   tasks:
-    - /usr/bin/git pull
+    - export DEPLOYPATH=/home/sateales/public_html/tealblocks/wp-content/themes/tealblank
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp functions.php $DEPLOYPATH
+    - /bin/cp -R blocks $DEPLOYPATH
+    - /bin/cp -R template-parts $DEPLOYPATH
+    - /bin/cp -R src $DEPLOYPATH
+    - /bin/cp theme.json $DEPLOYPATH
+    - /bin/cp archive.php $DEPLOYPATH
+    - /bin/cp blocks.php $DEPLOYPATH
+    - /bin/cp footer.php $DEPLOYPATH
+    - /bin/cp header.php $DEPLOYPATH
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp page.php $DEPLOYPATH
+    - /bin/cp search.php $DEPLOYPATH
+    - /bin/cp single.php $DEPLOYPATH
+    
