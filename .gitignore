@@ -15,7 +15,7 @@ Thumbs.db
 .vscode/
 .idea/
 
-# WordPress (si aplicara)
-wp-content/uploads/
-wp-content/upgrade/
-wp-content/cache/
+# stubs
+stubs/
+
+
