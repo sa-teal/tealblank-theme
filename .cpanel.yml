@@ -4,6 +4,7 @@ deployment:
     - export DEPLOYPATH=/home/sateales/public_html/tealblocks/wp-content/themes/tealblank
     - /bin/cp -R template-parts $DEPLOYPATH
     - /bin/cp -R src $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
     - /bin/cp functions.php $DEPLOYPATH
     - /bin/cp index.php $DEPLOYPATH
