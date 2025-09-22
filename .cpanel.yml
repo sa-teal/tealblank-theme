@@ -16,7 +16,3 @@ deployment:
     - /bin/cp header.php $DEPLOYPATH
     - /bin/cp archive.php $DEPLOYPATH
     - /bin/cp blocks.php $DEPLOYPATH
-
-
-
-    
