@@ -14,12 +14,12 @@ $reverse_order = get_field('reverse_order');
 <div class="text-image-block flex flex-col md:flex-row <?php echo $reverse_order ? 'md:flex-row-reverse' : ''; ?>">
     
     <?php if($show_image && $image): ?>
-        <div class="image w-full md:w-1/2 order-1 md:order-1">
+        <div class="image w-full md:w-1/2">
             <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
         </div>
     <?php endif; ?>
 
-    <div class="text w-full md:w-1/2 order-2 md:order-2 flex flex-col justify-center p-4">
+    <div class="text w-full md:w-1/2 flex flex-col justify-center p-4">
         <?php if($show_title && $title): ?>
             <h2 class="text-2xl font-bold mb-2"><?php echo esc_html($title); ?></h2>
         <?php endif; ?>
@@ -34,10 +34,3 @@ $reverse_order = get_field('reverse_order');
     </div>
 
 </div>
-
-<style>
-@media (max-width: 767px) {
-    .text-image-block .image { order: 1; }
-    .text-image-block .text { order: 2; }
-}
-</style>
