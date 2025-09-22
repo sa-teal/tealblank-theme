@@ -9,6 +9,9 @@ $text = get_field('text');
 $show_button = get_field('show_button');
 $button = get_field('button');
 $reverse_order = get_field('reverse_order');
+$title_size = get_field('title_size') ?: '2xl';
+$text_size = get_field('text_size') ?: 'base';
+
 ?>
 
 <div class="text-image-block flex flex-col md:flex-row <?php echo $reverse_order ? 'md:flex-row-reverse' : ''; ?>">
@@ -21,11 +24,11 @@ $reverse_order = get_field('reverse_order');
 
     <div class="text w-full md:w-1/2 flex flex-col justify-center p-4">
         <?php if($show_title && $title): ?>
-            <h2 class="text-2xl font-bold mb-2"><?php echo esc_html($title); ?></h2>
+            <<?php echo esc_attr($title_tag); ?> class="<?php echo 'text-' . esc_attr($title_size); ?> font-bold mb-2"><?php echo esc_html($title); ?></<?php echo esc_attr($title_tag); ?>>
         <?php endif; ?>
 
         <?php if($show_text && $text): ?>
-            <div class="mb-4"><?php echo wp_kses_post($text); ?></div>
+            <div class="mb-4 <?php echo 'text-' . esc_attr($text_size); ?>"><?php echo wp_kses_post($text); ?></div>
         <?php endif; ?>
 
         <?php if($show_button && $button): ?>
