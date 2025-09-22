@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main id="content" class="max-w-6xl mx-auto px-4 py-8">
+<main id="content" class="max-w-7xl mx-auto px-4 py-8">
 
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
