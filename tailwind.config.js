@@ -8,7 +8,11 @@ module.exports = {
     "./src/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['"Work Sans"', 'sans-serif']
+      }
+    }
   },
   plugins: [],
 }
