@@ -11,6 +11,7 @@ $button = get_field('button');
 $reverse_order = get_field('reverse_order');
 $title_size = get_field('title_size') ?: '2xl';
 $text_size = get_field('text_size') ?: 'base';
+$title_tag = get_field('title_tag') ?: 'h2';
 
 ?>
 
